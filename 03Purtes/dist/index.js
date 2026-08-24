@@ -35,5 +35,11 @@ class User {
         this._coursecount = num;
     }
 }
+class SubUser extends User {
+    isFamily = true;
+    changecoursecount() {
+        this._coursecount = 4;
+    }
+}
 const sravani = new User("srav@s.com", "sravani");
 //# sourceMappingURL=index.js.map

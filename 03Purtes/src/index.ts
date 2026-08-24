@@ -11,7 +11,7 @@
 // const sravani=new User("srav@s.com","sravani");
 
 class User{
-   private _coursecount=1
+   protected _coursecount=1
     readonly city:string="hyderabad"
     constructor(
         public email:string,
@@ -37,4 +37,13 @@ class User{
     }
 }
 
+
+class SubUser extends User{
+    isFamily:boolean=true
+    changecoursecount(){
+        this._coursecount=4
+    }
+}
 const sravani=new User("srav@s.com","sravani");
+
+
