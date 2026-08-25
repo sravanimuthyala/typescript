@@ -20,3 +20,15 @@ identityfour<Bottle>({
     brand: "milton",
     type: 8
 })
+
+function getSearchproducts<T>(products: T[]): T |undefined{
+    return products[3];
+}
+
+const result = getSearchproducts<number>([10, 20, 30, 40]);
+
+console.log(result); // 40
+
+const getMoreSearchproducts=<T>(products:T[]): T|undefined=>{
+    return products[3]
+}
